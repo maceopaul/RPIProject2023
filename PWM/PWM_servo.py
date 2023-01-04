@@ -14,7 +14,6 @@ def main():
     print('Wating for 1 sec') 
     time.sleep(1) 
     
-    
     print('Rotating at interval of 0-12 degrees')
     while duty_ratio <= MaxDuty:
         Servo.ChangeDutyCycle(duty_ratio)
@@ -28,7 +27,6 @@ def main():
     Servo.stop()
     GPIO.cleanup()
     print('Everythings cleanup')
-    
 
 if __name__ == '__main__':
     main()
